@@ -206,7 +206,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  devise
+  devise (~> 4.7, >= 4.7.2)
   jbuilder (~> 2.7)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
