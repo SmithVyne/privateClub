@@ -18,6 +18,10 @@
     height: 50px;
     background-color: #0095ff;
     margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
 .alert {
@@ -26,5 +30,5 @@
 
 .error {
     color: white;
-    font: 16px bold;
+    font: 22px bold;
 }
