@@ -10,6 +10,8 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
