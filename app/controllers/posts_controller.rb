@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
+  before_action :post_owner, only: [:edit, :update, :destroy]
+
 
   # GET /posts
   # GET /posts.json
@@ -10,7 +12,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   # GET /posts/1.json
-  def show; end
+  def show
+  end
 
   # GET /posts/new
   def new
@@ -18,7 +21,8 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1/edit
-  def edit; end
+  def edit
+  end
 
   # POST /posts
   # POST /posts.json
@@ -71,4 +75,11 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:post)
   end
+
+  def post_owner
+    unless current_user.id == @post.user_id
+     flash[:notice] = 'Access denied as you are not the owner of that post'
+     redirect_to posts_url
+    end
+   end
 end
