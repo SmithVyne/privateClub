@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   helper_method :post_owner
 
-      private
+  private
 
   def post_owner
     return if current_user.id == @post.user_id
