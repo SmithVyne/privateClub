@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
-  before_action :post_owner, only: [:edit, :update, :destroy]
+  before_action :post_owner, only: %i[edit update destroy]
 
   # GET /posts
   # GET /posts.json
@@ -61,7 +61,7 @@ class PostsController < ApplicationController
     end
   end
 
-  private
+    private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_post

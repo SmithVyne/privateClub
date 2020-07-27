@@ -4,9 +4,8 @@ class ApplicationController < ActionController::Base
     private
 
   def post_owner
-    unless current_user.id == @post.user_id
+    return if (current_user.id == @post.user_id)
     flash[:notice] = 'Access denied as you are not the owner of that post'
     redirect_to posts_url
-    end
   end
 end
