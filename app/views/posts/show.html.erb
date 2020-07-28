@@ -3,7 +3,5 @@
   <%= @post.post %>
 </p>
 
-<% if user_signed_in? && (current_user.id == @post.user_id) %>
-  <%= link_to 'Edit', edit_post_path(@post) %> |
-<% end %>
+<%= user_can_edit(@post) %>
 <%= link_to 'Back', posts_path %>
