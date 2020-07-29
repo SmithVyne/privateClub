@@ -1,24 +1,43 @@
-# README
+# Private Members Club
+Built-with: Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Set-Up instructions
+* Setup Ruby and Ruby-on-Rails on your computer
+* Clone this repository by running `git clone https://github.com/SmithVyne/privateClub.git` and cd into the directory
+* Run `gem install devise` to install the necessary ruby gem for authentication
+* Run `bundle install` to install the necessary ruby gems
+* Run `rails server` to start-up the application in the browser on the http://localhost:3000 where you can interact with the application
 
-Things you may want to cover:
 
-* Ruby version
+We created a Private Members Only Club Application with a simple interface where users can:
+1. Sign up and Sign in
+2. Create and view posts
+3. Only signed in members can view the author of the posts.
 
-* System dependencies
+Technical details:
+We designed how to structure our model relationships and associations
+We generated a new rails app from the command line.
+We generated models and filled-out migrations
+We ran the migrations to create tables
+We added validations to the models
+We created users and posts and tested these validations in the rails console and in the browser
 
-* Configuration
 
-* Database creation
+## Authors
 
-* Database initialization
+👤 **Paul Omondi**
 
-* How to run the test suite
+- Github: [@paulo-techie](https://github.com/paulo-techie)
+- Email: [email me](paulo.techie@gmail.com)
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Smith Nkereuwem**
 
-* Deployment instructions
+- Github: [@SmithVyne](https://github.com/SmithVyne)
+- Twitter: [@SmithVyne](https://twitter.com/SmithVyne)
+- Email: [email me](smithnkereuwem2@gmail.com)
 
-* ...
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
