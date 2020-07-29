@@ -1,0 +1,7 @@
+<p>
+  <strong>Post:</strong>
+  <%= @post.post %>
+</p>
+
+<%= user_can_edit(@post) %>
+<%= link_to 'Back', posts_path %>
