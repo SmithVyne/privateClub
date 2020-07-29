@@ -28,13 +28,13 @@ We created users and posts and tested these validations in the rails console and
 👤 **Paul Omondi**
 
 - Github: [@paulo-techie](https://github.com/paulo-techie)
-- Email: [email me](paulo.techie@gmail.com)
+- Email: [email me](mailto:paulo.techie@gmail.com)
 
 👤 **Smith Nkereuwem**
 
 - Github: [@SmithVyne](https://github.com/SmithVyne)
 - Twitter: [@SmithVyne](https://twitter.com/SmithVyne)
-- Email: [email me](smithnkereuwem2@gmail.com)
+- Email: [email me](mailto:smithnkereuwem2@gmail.com)
 
 
 ## Show your support
